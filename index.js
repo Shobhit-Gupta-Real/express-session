@@ -17,7 +17,6 @@ app.use(session({
     secret: "mysecret", 
     resave: false,
     saveUninitialized: true,
-    proxy: true,
     cookie: {
         maxAge: 1000 * 60 * 60, // Session expires after 1hr
         sameSite: 'none',
