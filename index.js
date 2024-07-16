@@ -22,6 +22,7 @@ app.use(session({
         maxAge: 1000 * 60 * 60, // Session expires after 1hr
         sameSite: 'none',
         secure: true,
+        httpOnly: true
         }
 }));
 
