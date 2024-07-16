@@ -12,7 +12,7 @@ app.use(cors({
     origin: ["https://6696109d296a3f2d81945237--bright-pithivier-85bd9a.netlify.app"],
     methods: ["POST", "GET"]
 }));
-
+app.set('trust proxy', 1)
 app.use(session({
     secret: "mysecret", 
     resave: false,
