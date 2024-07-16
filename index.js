@@ -20,6 +20,8 @@ app.use(session({
     cookie: {
         maxAge: 1000 * 60 * 60, // Session expires after 1hr
         sameSite: 'none',
+        secure: true,
+        priority: 'high',
         httpOnly: true // Ensures cookie is not accessible via JavaScript
         }
 }));
